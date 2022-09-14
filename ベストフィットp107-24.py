@@ -16,4 +16,4 @@ for i in range(kosu):
     y.append(y[i]+ido)
 
 plt.plot(x,y)
-plt.show
+plt.show()
