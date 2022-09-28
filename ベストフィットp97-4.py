@@ -1,6 +1,3 @@
-from re import X
-
-
 kakaku = [580, 970, 430, 820, 760]
 
 saisyo = kakaku[0]
