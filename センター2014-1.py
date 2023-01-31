@@ -4,7 +4,7 @@
 
 n = int(input('N='))
 
-d=2
+d=5
 c=0
 m=n
 
