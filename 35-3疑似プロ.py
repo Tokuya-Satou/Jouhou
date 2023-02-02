@@ -15,6 +15,5 @@ x = int(input('あなたの得点 = '))
 
 while x < 0 or x>100:
     x = int(input('もう一度入力してください \nあなたの得点 = '))
-    
 
 print(seiseki(x))
