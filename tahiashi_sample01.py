@@ -1,6 +1,6 @@
 import tkinter
 
-x = 7000
+x = "7000"
 
 class Application(tkinter.Frame):
 
@@ -24,7 +24,7 @@ class Application(tkinter.Frame):
         self.Label_6.place(x=80, y=200)
 
         def btn_click():
-            num_1 = x
+            num_1 = int(x)
             num = int(txt_1.get())
             num_sum = num_1 -num
             txt_1.delete(0, tkinter.END)
@@ -35,6 +35,8 @@ class Application(tkinter.Frame):
 
         txt_1 = tkinter.Entry(width = 30) # テキストボックス
         txt_1.place(x=200, y=210)
+
+        txt_1.insert(0, 7000)
 
 if __name__ == '__main__':
     root = tkinter.Tk()
