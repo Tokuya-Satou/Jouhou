@@ -11,10 +11,11 @@ for n in range(1,l+1):
     x = 1
     for i in range(n):
         x = x*(m+i)
-    k = 2*n
+    k = 2**n
     if x-(x//k)*k == 0:
         k=2*k
         if x-(x//k)*k >0:
+            print(n)
             c=c+1
 
 print('求める個数は',c)

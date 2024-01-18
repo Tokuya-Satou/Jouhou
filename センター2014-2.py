@@ -6,7 +6,7 @@ n = int(input('N='))
 
 for d in range(2,n):
     # d が素数か合成数かの確認
-    ir = 0      
+    ir = 0
     for k in range(2,d-1):
         if d == (d//k)*k:
             ir = 1
