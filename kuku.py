@@ -4,3 +4,6 @@ for i in range(1,10):
             print(i*j, end="\t")
         else:
             print(i*j)
+
+print('Hello', end=',')
+print('World')
