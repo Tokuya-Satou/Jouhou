@@ -53,6 +53,7 @@ print(str(string) ,'=' ,str(cnt))
 srchst = string
 srchnm = cnt
 
+# ハフマン木の作成
 while len(srchst) > 2:
     src = sort(srchst,srchnm,len(srchst))
     srchst = src[0]
@@ -64,3 +65,8 @@ while len(srchst) > 2:
     srchnm = src[1]
     print(srchst, srchnm)
 
+# ハフマン木の作成：幹の部分を [大、小に入れ替える]
+if srchnm[0] < srchnm[1]:
+    srchst[0], srchst[1] = srchst[1], srchst[0]
+    srchnm[0], srchnm[1] = srchnm[1], srchnm[0]
+print(srchst, srchnm)
